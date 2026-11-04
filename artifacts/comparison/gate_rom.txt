@@ -1,0 +1,15 @@
+[cycle 6654] round 1: target=0010 press@+250, measured=269 cycles, display=01 (updated at +318)
+[cycle 13360] round 2: target=0010 press@+333, measured=353 cycles, display=02 (updated at +403)
+[cycle 19869] round 3: WRONG button 0010 at +120 -> display EE, round restarted (LEDs=1111)
+[cycle 26686] round 3: target=0010 press@+460, measured=482 cycles, display=02 (updated at +531)
+[cycle 33250] round 4: target=0100 press@+180, measured=196 cycles, display=01 (updated at +246)
+[cycle 40239] round 5: target=0100 press@+610, measured=625 cycles, display=03 (updated at +674)
+[cycle 46903] round 6: target=0001 press@+299, measured=311 cycles, display=02 (updated at +361)
+[cycle 54053] round 7: target=0010 press@+777, measured=793 cycles, display=04 (updated at +843)
+[cycle 60847] round 8: target=1000 press@+405, measured=426 cycles, display=02 (updated at +475)
+[cycle 67380] round 9: target=0100 press@+150, measured=168 cycles, display=01 (updated at +218)
+[cycle 74281] round 10: target=0100 press@+520, measured=538 cycles, display=03 (updated at +588)
+[cycle 75134] average display=02, LEDs=0000
+data RAM accesses during the whole game: 0
+RESULT: PASS (errors=0)
+tb/tb_game.v:182: $finish called at 7513400000 (1ps)
