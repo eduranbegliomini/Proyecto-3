@@ -6,15 +6,31 @@
 
 ## Versiones del entorno
 
-| **Elemento** | **Versión / revisión** |
-|---|---|
-| LibreLane | **3.0.17**, flake `github:librelane/librelane/64ef80802d3d189b476636d2a6b17888c03304ee` |
-| PDK | **gf180mcuD**, revisión de `open_pdks` `54435919abffb937387ec956209f9cf5fd2dfbee`, gestionado por `ciel` en `~/.ciel` |
-| Biblioteca estándar | **gf180mcu_fd_sc_mcu7t5v0** (7 tracks, 5 V) |
-| Herramientas del flujo | Yosys, OpenROAD, KLayout, Magic, Netgen, Verilator e Icarus Verilog, disponibles en el entorno de LibreLane/Nix |
-| Python | Python 3 para el assembler, los scripts y las pruebas unitarias |
+El proyecto fue desarrollado utilizando el siguiente entorno de herramientas:
 
-La corrida física ROM de referencia fue ejecutada con `CLOCK_PERIOD = 100 ns` y `FP_CORE_UTIL = 40 %`. La revisión del PDK y la versión de LibreLane indicadas arriba corresponden al entorno registrado para esa ejecución.
+| Herramienta | Versión / revisión |
+|---|---|
+| LibreLane | 3.0.17 |
+| LibreLane Git revision | `64ef80802d3d189b476636d2a6b17888c03304ee` |
+| Yosys | 0.62 (Git: `7326bb7d6641500ecb285c291a54a662cb1e76cf`) |
+| OpenROAD | Build 2026-02-17 (Git: `dcf36133a369abc8f3c5e5738cd4d82e4903c0e0`) |
+| KLayout | 0.30.7 |
+| Magic | 8.3.623 |
+| Netgen | 1.5.316 (versión del paquete Nix) |
+| Verilator | 5.044 (revision `v5.040`) |
+| Icarus Verilog | 13.0 (development build: `s20250103-60-gdb82380ce`) |
+| Python | 3.14.4 |
+| PDK | GF180MCU, plataforma `gf180mcuD` |
+| PDK revision | `54435919abffb937387ec956209f9cf5fd2dfbee` |
+| Standard Cell Library | `gf180mcu_fd_sc_mcu7t5v0` |
+
+Las herramientas de diseño físico se obtienen mediante el entorno Nix de
+LibreLane. Las versiones corresponden a los paquetes y ejecutables
+utilizados en el entorno del proyecto.
+
+La corrida física ROM de referencia fue ejecutada con `CLOCK_PERIOD = 100 ns`
+y `FP_CORE_UTIL = 40 %`. La revisión del PDK y la versión de LibreLane
+indicadas arriba corresponden al entorno registrado para esa ejecución.
 
 ## Estructura del repositorio
 
